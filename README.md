@@ -6,15 +6,15 @@ Get your account id and auth token from [Twilio](https://www.twilio.com/).\
 Verify your mobile number in Twilio and make changes in the code accordingly.
 
 # Requirements
-Requests\
+Requests
 ```
 pip3 install requests
 ```
-BeautifulSoup4\
+BeautifulSoup4
 ```
 pip3 install bs4
 ```
-Twilio\
+Twilio
 ```
 pip3 install twilio
 ```
