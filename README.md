@@ -2,7 +2,7 @@
 Simple python program to track prices on Amazon.
 
 # Usage
-Make changes in the on the following lines.
+Make changes in the code on the following lines.
 - Line 8
 - Line 22
 - Line 30
