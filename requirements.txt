@@ -1,3 +1,4 @@
 requests
+smtplib
+email.message
 bs4
-twilio
