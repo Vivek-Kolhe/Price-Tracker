@@ -2,15 +2,12 @@
 Simple python program to track prices on Amazon.
 
 # Usage
-[Less Secure Apps](https://myaccount.google.com/lesssecureapps)
+Make changes in the on the following lines.
+- Line 8
+- Line 22
+- Line 30
 
-# Requirements
-Requests
-```
-pip3 install requests
-```
-BeautifulSoup4
-```
-pip3 install bs4
-```
+Turn on [Less Secure Apps](https://myaccount.google.com/lesssecureapps) from your dummy/fake gmail account and run the code (still kind of incomplete).\
+Check the spams for e-mails.
+
 *Note : Currently works for single product only and won't work for **deal prices**. :)* 
