@@ -37,9 +37,8 @@ def send_mail(msg):
         smtp.login("", "") # login your dummy/fake account in this format ("xyz@gmail.com", "password")
         smtp.send_message(email)
 
-get_item(urls, items)
-
 while True:
+	get_item(urls, items)
 	for i in range(len(items)):
 		if items[i]["Price"] < exp_prices[i]:
 			msg = f"Price has lowered for {items[i]['Title']} to {items[i]['Price']}.\nGo check it out at {items[i]['Url']}"
