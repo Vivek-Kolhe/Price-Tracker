@@ -45,3 +45,4 @@ while True:
 			send_mail(msg)
 			# print("done")
 	time.sleep(6*3600)
+	items.clear()
