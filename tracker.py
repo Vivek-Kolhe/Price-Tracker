@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import time
 import smtplib
 from email.message import EmailMessage
 
@@ -38,8 +39,10 @@ def send_mail(msg):
 
 get_item(urls, items)
 
-for i in range(len(items)):
-	if items[i]["Price"] < exp_prices[i]:
-		msg = f"Price has lowered for {items[i]['Title']} to {items[i]['Price']}.\nGo check it out at {items[i]['Url']}"
-		send_mail(msg)
-		# print("done")
+while True:
+	for i in range(len(items)):
+		if items[i]["Price"] < exp_prices[i]:
+			msg = f"Price has lowered for {items[i]['Title']} to {items[i]['Price']}.\nGo check it out at {items[i]['Url']}"
+			send_mail(msg)
+			# print("done")
+	time.sleep(6*3600)
