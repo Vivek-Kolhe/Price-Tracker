@@ -12,7 +12,6 @@ Commit changes in ***notify.py*** and ***main.py***
 - main.py
 1) Pass urls in line 5
 2) Prices in ```exp_prices```
-
 ```
 urls = [
         "https://www.amazon.in/product1/",
@@ -23,5 +22,5 @@ exp_prices = [1000, 500] # as integer or float type
 Here, it'll notify you when price for product1 gets below ***1000*** and same for product2 when it gets below ***500***.\
 ***Note*** *: It will check for prices once every 6 hours by default, you can change it on line 23 in **main.py**.*
 
-Turn on [Less Secure Apps](https://myaccount.google.com/lesssecureapps) from your another gmail account and run the code.\
+Turn on [Less Secure Apps](https://myaccount.google.com/lesssecureapps) from your another gmail account and run main.py.\
 Check the mail entered on line 7 in *notify.py* for e-mails.
