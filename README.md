@@ -1,13 +1,26 @@
 # Price-Tracker
-Simple python program to track prices on Amazon.
+Simple python program to track prices on Amazon and Flipkart.
 
 # Usage
-Make changes in the code on the following lines.
-- Line 8
-- Line 22
-- Line 30
+Fork the repository.\
+Commit changes in ***notify.py*** and ***main.py***
+- notify.py
+1) Line 7\
+``` email["to] = "<your gmail account here>"```
+2) Line 15\
+```smtp.login("xyz@gmail.com", "password") # another gmail account to send mails```
+- main.py
+1) Pass urls in line 5
+2) Prices in ```exp_prices```
 
-Turn on [Less Secure Apps](https://myaccount.google.com/lesssecureapps) from your dummy/fake gmail account and run the code (still kind of incomplete).\
-Check the spams for e-mails.
+```
+urls = [
+        "https://www.amazon.in/product1/",
+        "https://www.flipkart.in/product2/"
+       ] # url as strings
+exp_prices = [1000, 500] # as integer or float type
+```
+Here, it'll notify you when price for product1 gets below ***1000*** and same for product2 when it gets below ***500***.
 
-*Note : ~~Currently works for single product only and won't work for **deal prices**. :)~~* 
+Turn on [Less Secure Apps](https://myaccount.google.com/lesssecureapps) from your another gmail account and run the code.\
+Check the mail entered on line 7 in *notify.py* for e-mails.
