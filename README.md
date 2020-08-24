@@ -17,7 +17,7 @@ urls = [
         "https://www.amazon.in/product1/",
         "https://www.flipkart.in/product2/"
        ] # url as strings
-exp_prices = [1000, 500] # as integer or float type
+marked_prices = [1000, 500] # as integer or float type
 ```
 Here, it'll notify you when price for product1 gets below ***1000*** and same for product2 when it gets below ***500***.\
 ***Note*** *: It will check for prices once every 6 hours by default, you can change it on line 23 in **main.py**.*
